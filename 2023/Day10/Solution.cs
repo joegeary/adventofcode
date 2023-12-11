@@ -76,33 +76,40 @@ internal class Solution : ISolver
             '|' => dir switch
             {
                 Direction.Up => (x - 1, y, Direction.Up),
-                Direction.Down => (x + 1, y, Direction.Down)
+                Direction.Down => (x + 1, y, Direction.Down),
+                _ => throw new InvalidOperationException("???")
             },
             '-' => dir switch
             {
                 Direction.Left => (x, y - 1, Direction.Left),
-                Direction.Right => (x, y + 1, Direction.Right)
+                Direction.Right => (x, y + 1, Direction.Right),
+                _ => throw new InvalidOperationException("???")
             },
             '7' => dir switch
             {
                 Direction.Up => (x, y - 1, Direction.Left),
-                Direction.Right => (x + 1, y, Direction.Down)
+                Direction.Right => (x + 1, y, Direction.Down),
+                _ => throw new InvalidOperationException("???")
             },
             'F' => dir switch
             {
                 Direction.Up => (x, y + 1, Direction.Right),
-                Direction.Left => (x + 1, y, Direction.Down)
+                Direction.Left => (x + 1, y, Direction.Down),
+                _ => throw new InvalidOperationException("???")
             },
             'L' => dir switch
             {
                 Direction.Down => (x, y + 1, Direction.Right),
-                Direction.Left => (x - 1, y, Direction.Up)
+                Direction.Left => (x - 1, y, Direction.Up),
+                _ => throw new InvalidOperationException("???")
             },
             'J' => dir switch
             {
                 Direction.Down => (x, y - 1, Direction.Left),
-                Direction.Right => (x - 1, y, Direction.Up)
+                Direction.Right => (x - 1, y, Direction.Up),
+                _ => throw new InvalidOperationException("???")
             },
+            _ => throw new InvalidOperationException("???")
         };
     }
 
