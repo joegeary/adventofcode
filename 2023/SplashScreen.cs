@@ -7,8 +7,8 @@ internal class SplashScreenImpl : ISplashScreen
     {
         var color = Console.ForegroundColor;
         Write(0xcc00, false, "           ▄█▄ ▄▄█ ▄ ▄ ▄▄▄ ▄▄ ▄█▄  ▄▄▄ ▄█  ▄▄ ▄▄▄ ▄▄█ ▄▄▄\n           █▄█ █ █ █ █ █▄█ █ █ █   █ █ █▄ ");
-            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  0x0000 | 2023\n           ");
-            Write(0xcc00, false, " \n                                ");
+            Write(0xcc00, false, " █  █ █ █ █ █▄█\n           █ █ █▄█ ▀▄▀ █▄▄ █ █ █▄  █▄█ █   █▄ █▄█ █▄█ █▄▄  $year = 2023\n            ");
+            Write(0xcc00, false, "\n                                ");
             Write(0xa25151, false, "...'''''''''...                    \n                             .'' ");
             Write(0xdf2308, true, "~");
             Write(0xa5a8af, false, "/\\");
@@ -118,17 +118,18 @@ internal class SplashScreenImpl : ISplashScreen
             Write(0xffff66, false, "**\n                   ");
             Write(0xe3b585, false, "'. ~ ");
             Write(0xcc00, false, "\" ' ");
-            Write(0xe3b585, false, "~ ~ ~");
-            Write(0x666666, false, " * ");
-            Write(0x6b4d3b, false, "##### ");
+            Write(0xe3b585, false, "~ ~ ~ ");
+            Write(0xffff66, true, "* ");
+            Write(0xe3b585, false, "~~~");
+            Write(0x6b4d3b, false, "## ");
             Write(0xe3b585, false, ".'                  ");
             Write(0xcccccc, false, "20 ");
-            Write(0x666666, false, "**\n                     ");
+            Write(0xffff66, false, "**\n                     ");
             Write(0xe3b585, false, "'.. ~ ~ ");
             Write(0xffff66, true, "* ");
             Write(0xe3b585, false, "~ ");
-            Write(0x6b4d3b, false, "##### ");
-            Write(0xe3b585, false, "..'");
+            Write(0x6b4d3b, false, "####");
+            Write(0xe3b585, false, "~~~~'");
             Write(0xcc00, false, ".'''''''''...       ");
             Write(0xcccccc, false, " 7 ");
             Write(0xffff66, false, "**\n                        ");
@@ -143,7 +144,8 @@ internal class SplashScreenImpl : ISplashScreen
             Write(0xcccccc, false, " 6 ");
             Write(0xffff66, false, "**\n                                   ");
             Write(0xcc00, false, ".' ");
-            Write(0x5555bb, false, "~    ");
+            Write(0x5555bb, false, "~ ");
+            Write(0xe3b585, false, ".. ");
             Write(0xcc00, false, "'...' ");
             Write(0x5555bb, false, "~");
             Write(0xcc00, false, "'");
@@ -153,7 +155,8 @@ internal class SplashScreenImpl : ISplashScreen
             Write(0xcc00, false, "'.  ");
             Write(0xcccccc, false, "21 ");
             Write(0x666666, false, "**\n                                   ");
-            Write(0xcc00, false, ":         ");
+            Write(0xcc00, false, ":  ");
+            Write(0xe3b585, false, ".   '. ");
             Write(0x5555bb, false, "~     ");
             Write(0xcc00, false, "'. ");
             Write(0xffff66, true, "*");
@@ -163,8 +166,10 @@ internal class SplashScreenImpl : ISplashScreen
             Write(0xcccccc, false, " 5 ");
             Write(0xffff66, false, "**\n                            ");
             Write(0xffffff, false, "...''''");
-            Write(0xcc00, false, "'.");
-            Write(0x333333, false, "  *      ");
+            Write(0xcc00, false, "'. ");
+            Write(0xe3b585, false, "'");
+            Write(0x333333, false, "*  ");
+            Write(0xe3b585, false, ".'  ");
             Write(0xcc00, false, ".''.");
             Write(0x5555bb, false, "~  ");
             Write(0xcc00, false, "'..' .'  ");
