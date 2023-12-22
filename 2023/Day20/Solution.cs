@@ -14,14 +14,6 @@ internal class Solution : ISolver
 
     public object PartTwo(string input)
     {
-        /* input = """ */
-        /*         broadcaster -> a */
-        /*         %a -> inv, con */
-        /*         &inv -> b */
-        /*         %b -> con */
-        /*         &con -> output */
-        /*         """; */
-
         var modules = Module.Parse(input);
         var iterations = new List<long>();
 
